@@ -8,16 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		F4B7A758212F702A003E3D3C /* AlphaTab_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B7A756212F702A003E3D3C /* AlphaTab_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B7A765212F70EC003E3D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B7A764212F70EC003E3D3C /* AppDelegate.swift */; };
+		F4B7A76A212F70EC003E3D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B7A768212F70EC003E3D3C /* Main.storyboard */; };
+		F4B7A76C212F70EC003E3D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B7A76B212F70EC003E3D3C /* Assets.xcassets */; };
+		F4B7A76F212F70EC003E3D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B7A76D212F70EC003E3D3C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4B7A753212F702A003E3D3C /* AlphaTab_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlphaTab_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B7A756212F702A003E3D3C /* AlphaTab_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaTab_Swift.h; sourceTree = "<group>"; };
 		F4B7A757212F702A003E3D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B7A762212F70EB003E3D3C /* AlphaTabDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaTabDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B7A764212F70EC003E3D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4B7A769212F70EC003E3D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4B7A76B212F70EC003E3D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4B7A76E212F70EC003E3D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4B7A770212F70EC003E3D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F4B7A750212F702A003E3D3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B7A75F212F70EB003E3D3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,6 +47,7 @@
 		F4B7A749212F702A003E3D3C = {
 			isa = PBXGroup;
 			children = (
+				F4B7A763212F70EB003E3D3C /* AlphaTabDemo */,
 				F4B7A755212F702A003E3D3C /* AlphaTab.Swift */,
 				F4B7A754212F702A003E3D3C /* Products */,
 			);
@@ -39,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F4B7A753212F702A003E3D3C /* AlphaTab_Swift.framework */,
+				F4B7A762212F70EB003E3D3C /* AlphaTabDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +69,18 @@
 				F4B7A757212F702A003E3D3C /* Info.plist */,
 			);
 			path = AlphaTab.Swift;
+			sourceTree = "<group>";
+		};
+		F4B7A763212F70EB003E3D3C /* AlphaTabDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F4B7A764212F70EC003E3D3C /* AppDelegate.swift */,
+				F4B7A768212F70EC003E3D3C /* Main.storyboard */,
+				F4B7A76B212F70EC003E3D3C /* Assets.xcassets */,
+				F4B7A76D212F70EC003E3D3C /* LaunchScreen.storyboard */,
+				F4B7A770212F70EC003E3D3C /* Info.plist */,
+			);
+			path = AlphaTabDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +115,37 @@
 			productReference = F4B7A753212F702A003E3D3C /* AlphaTab_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F4B7A761212F70EB003E3D3C /* AlphaTabDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B7A771212F70EC003E3D3C /* Build configuration list for PBXNativeTarget "AlphaTabDemo" */;
+			buildPhases = (
+				F4B7A75E212F70EB003E3D3C /* Sources */,
+				F4B7A75F212F70EB003E3D3C /* Frameworks */,
+				F4B7A760212F70EB003E3D3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlphaTabDemo;
+			productName = AlphaTabDemo;
+			productReference = F4B7A762212F70EB003E3D3C /* AlphaTabDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F4B7A74A212F702A003E3D3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Christian Moler";
 				TargetAttributes = {
 					F4B7A752212F702A003E3D3C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F4B7A761212F70EB003E3D3C = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -104,6 +156,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F4B7A749212F702A003E3D3C;
 			productRefGroup = F4B7A754212F702A003E3D3C /* Products */;
@@ -111,6 +164,7 @@
 			projectRoot = "";
 			targets = (
 				F4B7A752212F702A003E3D3C /* AlphaTab.Swift */,
+				F4B7A761212F70EB003E3D3C /* AlphaTabDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +174,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B7A760212F70EB003E3D3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B7A76F212F70EC003E3D3C /* LaunchScreen.storyboard in Resources */,
+				F4B7A76C212F70EC003E3D3C /* Assets.xcassets in Resources */,
+				F4B7A76A212F70EC003E3D3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +197,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4B7A75E212F70EB003E3D3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B7A765212F70EC003E3D3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4B7A768212F70EC003E3D3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B7A769212F70EC003E3D3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4B7A76D212F70EC003E3D3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B7A76E212F70EC003E3D3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F4B7A759212F702A003E3D3C /* Debug */ = {
@@ -308,6 +399,42 @@
 			};
 			name = Release;
 		};
+		F4B7A772212F70EC003E3D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlphaTabDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcl.AlphaTabDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B7A773212F70EC003E3D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlphaTabDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcl.AlphaTabDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +452,15 @@
 			buildConfigurations = (
 				F4B7A75C212F702A003E3D3C /* Debug */,
 				F4B7A75D212F702A003E3D3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B7A771212F70EC003E3D3C /* Build configuration list for PBXNativeTarget "AlphaTabDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B7A772212F70EC003E3D3C /* Debug */,
+				F4B7A773212F70EC003E3D3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
