@@ -12,6 +12,8 @@
 		F4B7A76A212F70EC003E3D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B7A768212F70EC003E3D3C /* Main.storyboard */; };
 		F4B7A76C212F70EC003E3D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B7A76B212F70EC003E3D3C /* Assets.xcassets */; };
 		F4B7A76F212F70EC003E3D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B7A76D212F70EC003E3D3C /* LaunchScreen.storyboard */; };
+		F4B7A778212F73AA003E3D3C /* GpxFileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B7A777212F73AA003E3D3C /* GpxFileSystem.swift */; };
+		F4B7A77A212F73C1003E3D3C /* GpxImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B7A779212F73C1003E3D3C /* GpxImporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F4B7A76B212F70EC003E3D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B7A76E212F70EC003E3D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4B7A770212F70EC003E3D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B7A777212F73AA003E3D3C /* GpxFileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpxFileSystem.swift; sourceTree = "<group>"; };
+		F4B7A779212F73C1003E3D3C /* GpxImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpxImporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		F4B7A755212F702A003E3D3C /* AlphaTab.Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F4B7A776212F7383003E3D3C /* Importer */,
 				F4B7A756212F702A003E3D3C /* AlphaTab_Swift.h */,
 				F4B7A757212F702A003E3D3C /* Info.plist */,
 			);
@@ -81,6 +86,15 @@
 				F4B7A770212F70EC003E3D3C /* Info.plist */,
 			);
 			path = AlphaTabDemo;
+			sourceTree = "<group>";
+		};
+		F4B7A776212F7383003E3D3C /* Importer */ = {
+			isa = PBXGroup;
+			children = (
+				F4B7A777212F73AA003E3D3C /* GpxFileSystem.swift */,
+				F4B7A779212F73C1003E3D3C /* GpxImporter.swift */,
+			);
+			path = Importer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +158,7 @@
 				TargetAttributes = {
 					F4B7A752212F702A003E3D3C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					F4B7A761212F70EB003E3D3C = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B7A778212F73AA003E3D3C /* GpxFileSystem.swift in Sources */,
+				F4B7A77A212F73C1003E3D3C /* GpxImporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +369,7 @@
 		F4B7A75C212F702A003E3D3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -369,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mcl.AlphaTab-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,6 +396,7 @@
 		F4B7A75D212F702A003E3D3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
